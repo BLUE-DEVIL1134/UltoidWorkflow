@@ -19,12 +19,12 @@ _This is a example of env in `root/.github/workflows/example.yml`_
 
 ```yaml tab="example.yml"
 env:
-  api_id: 'YOUR_API_ID'
-  api_hash: 'YOUR_API_HASH'
-  session: ${{ secrets.session }}
-  redis_uri: ${{ secrets.redis_uri }}
-  redis_password: ${{ secrets.redis_password }}
-  database_url: ${{ secrets.database_url }}
+  API_ID: 'YOUR_API_ID'
+  API_HASH: 'YOUR_API_HASH'
+  SESSION: ${{ secrets.session }}
+  REDIS_URI: ${{ secrets.redis_uri }}
+  REDIS_PASSWORD: ${{ secrets.redis_password }}
+  DATABASE_URL: ${{ secrets.database_url }}
 ```
  - You can either give the env vars directly or via secrets !
 
