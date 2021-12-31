@@ -1,4 +1,4 @@
-FROM theteamultroid/ultroid:main
+FROM theteamultroid/ultroid:dev
 
 # Install Dart
  RUN apt-get update > /dev/null 2>&1
