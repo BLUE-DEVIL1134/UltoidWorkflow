@@ -4,7 +4,7 @@ on:
     - cron: "0 */6 * * *"
   push:
     branches:
-    - main
+    - dev
   workflow_dispatch:
 
 
@@ -12,8 +12,6 @@ env:
   API_ID: 1170144
   API_HASH: '7cf4f6769b5cfcd1c3b7bd645779c634'
   SESSION: ${{ secrets.session }}
-  REDIS_URI: ${{ secrets.redis_uri }}
-  REDIS_PASSWORD: ${{ secrets.redis_password }}
   DATABASE_URL: ${{ secrets.database_url }}
 
 jobs:
