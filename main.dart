@@ -27,14 +27,17 @@ void main(List<String> args) async {
   
   // Start UltroidCli
   var init = Process.runSync(
-    './ultroid',
+    'git',
     [
-      'init',
+      'clone',
+      'https://github.com/TeamUltroid/Ultroid',
+      '-b',
+      'dev',
+      'TeamUltroid',
     ],
     runInShell: true,
     workingDirectory: './',
   );
-  stdout.write(init.stdout);
   
   // Install Dependencies
   Process.runSync(
